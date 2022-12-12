@@ -1,0 +1,332 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Dec 11 17:11:31 2022
+| Host         : Yukikaze-PC running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/mult_accel_core_call_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z007s-clg225
+| Speed File   : -1  PRODUCTION 1.11 2016-07-27
+---------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.177ns  (logic 2.933ns (40.868%)  route 4.244ns (59.132%))
+  Logic Levels:           9  (CARRY4=5 DSP48E1=1 LUT3=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y10          DSP48E1                      0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+    DSP48_X0Y10          DSP48E1 (Prop_dsp48e1_CLK_PATTERNDETECT)
+                                                      0.662     0.662 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT
+                         net (fo=53, routed)          2.273     2.935    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP_0
+    SLICE_X22Y29         LUT5 (Prop_lut5_I3_O)        0.124     3.059 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DET_GEN[2].CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     3.059    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/S18_out
+    SLICE_X22Y29         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.457 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[0].CARRY_MUX_CARRY4/CO[3]
+                         net (fo=12, routed)          0.000     3.457    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_0
+    SLICE_X22Y30         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     3.614 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[4].CARRY_MUX_CARRY4/CO[1]
+                         net (fo=8, routed)           1.016     4.630    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_1
+    SLICE_X24Y27         LUT3 (Prop_lut3_I0_O)        0.357     4.987 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_6/O
+                         net (fo=2, routed)           0.955     5.942    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/norm_dist__0[2]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I3_O)        0.348     6.290 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_3/O
+                         net (fo=1, routed)           0.000     6.290    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/S[1]
+    SLICE_X23Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.840 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.840    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry_n_4
+    SLICE_X23Y27         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.954 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__0/CO[3]
+                         net (fo=1, routed)           0.000     6.954    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__0_n_4
+    SLICE_X23Y28         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.177 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__1/O[0]
+                         net (fo=1, routed)           0.000     7.177    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/minusOp[8]
+    SLICE_X23Y28         FDRE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.174ns  (logic 2.930ns (40.843%)  route 4.244ns (59.157%))
+  Logic Levels:           8  (CARRY4=4 DSP48E1=1 LUT3=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y10          DSP48E1                      0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+    DSP48_X0Y10          DSP48E1 (Prop_dsp48e1_CLK_PATTERNDETECT)
+                                                      0.662     0.662 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT
+                         net (fo=53, routed)          2.273     2.935    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP_0
+    SLICE_X22Y29         LUT5 (Prop_lut5_I3_O)        0.124     3.059 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DET_GEN[2].CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     3.059    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/S18_out
+    SLICE_X22Y29         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.457 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[0].CARRY_MUX_CARRY4/CO[3]
+                         net (fo=12, routed)          0.000     3.457    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_0
+    SLICE_X22Y30         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     3.614 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[4].CARRY_MUX_CARRY4/CO[1]
+                         net (fo=8, routed)           1.016     4.630    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_1
+    SLICE_X24Y27         LUT3 (Prop_lut3_I0_O)        0.357     4.987 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_6/O
+                         net (fo=2, routed)           0.955     5.942    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/norm_dist__0[2]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I3_O)        0.348     6.290 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_3/O
+                         net (fo=1, routed)           0.000     6.290    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/S[1]
+    SLICE_X23Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.840 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.840    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry_n_4
+    SLICE_X23Y27         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.174 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__0/O[1]
+                         net (fo=1, routed)           0.000     7.174    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/minusOp[5]
+    SLICE_X23Y27         FDRE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.153ns  (logic 2.909ns (40.670%)  route 4.244ns (59.330%))
+  Logic Levels:           8  (CARRY4=4 DSP48E1=1 LUT3=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y10          DSP48E1                      0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+    DSP48_X0Y10          DSP48E1 (Prop_dsp48e1_CLK_PATTERNDETECT)
+                                                      0.662     0.662 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT
+                         net (fo=53, routed)          2.273     2.935    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP_0
+    SLICE_X22Y29         LUT5 (Prop_lut5_I3_O)        0.124     3.059 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DET_GEN[2].CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     3.059    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/S18_out
+    SLICE_X22Y29         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.457 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[0].CARRY_MUX_CARRY4/CO[3]
+                         net (fo=12, routed)          0.000     3.457    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_0
+    SLICE_X22Y30         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     3.614 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[4].CARRY_MUX_CARRY4/CO[1]
+                         net (fo=8, routed)           1.016     4.630    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_1
+    SLICE_X24Y27         LUT3 (Prop_lut3_I0_O)        0.357     4.987 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_6/O
+                         net (fo=2, routed)           0.955     5.942    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/norm_dist__0[2]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I3_O)        0.348     6.290 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_3/O
+                         net (fo=1, routed)           0.000     6.290    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/S[1]
+    SLICE_X23Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.840 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.840    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry_n_4
+    SLICE_X23Y27         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     7.153 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__0/O[3]
+                         net (fo=1, routed)           0.000     7.153    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/minusOp[7]
+    SLICE_X23Y27         FDRE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.079ns  (logic 2.835ns (40.050%)  route 4.244ns (59.950%))
+  Logic Levels:           8  (CARRY4=4 DSP48E1=1 LUT3=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y10          DSP48E1                      0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+    DSP48_X0Y10          DSP48E1 (Prop_dsp48e1_CLK_PATTERNDETECT)
+                                                      0.662     0.662 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT
+                         net (fo=53, routed)          2.273     2.935    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP_0
+    SLICE_X22Y29         LUT5 (Prop_lut5_I3_O)        0.124     3.059 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DET_GEN[2].CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     3.059    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/S18_out
+    SLICE_X22Y29         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.457 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[0].CARRY_MUX_CARRY4/CO[3]
+                         net (fo=12, routed)          0.000     3.457    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_0
+    SLICE_X22Y30         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     3.614 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[4].CARRY_MUX_CARRY4/CO[1]
+                         net (fo=8, routed)           1.016     4.630    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_1
+    SLICE_X24Y27         LUT3 (Prop_lut3_I0_O)        0.357     4.987 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_6/O
+                         net (fo=2, routed)           0.955     5.942    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/norm_dist__0[2]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I3_O)        0.348     6.290 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_3/O
+                         net (fo=1, routed)           0.000     6.290    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/S[1]
+    SLICE_X23Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.840 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.840    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry_n_4
+    SLICE_X23Y27         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     7.079 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__0/O[2]
+                         net (fo=1, routed)           0.000     7.079    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/minusOp[6]
+    SLICE_X23Y27         FDRE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.063ns  (logic 2.819ns (39.914%)  route 4.244ns (60.086%))
+  Logic Levels:           8  (CARRY4=4 DSP48E1=1 LUT3=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y10          DSP48E1                      0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+    DSP48_X0Y10          DSP48E1 (Prop_dsp48e1_CLK_PATTERNDETECT)
+                                                      0.662     0.662 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT
+                         net (fo=53, routed)          2.273     2.935    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP_0
+    SLICE_X22Y29         LUT5 (Prop_lut5_I3_O)        0.124     3.059 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DET_GEN[2].CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     3.059    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/S18_out
+    SLICE_X22Y29         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.457 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[0].CARRY_MUX_CARRY4/CO[3]
+                         net (fo=12, routed)          0.000     3.457    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_0
+    SLICE_X22Y30         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     3.614 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[4].CARRY_MUX_CARRY4/CO[1]
+                         net (fo=8, routed)           1.016     4.630    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_1
+    SLICE_X24Y27         LUT3 (Prop_lut3_I0_O)        0.357     4.987 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_6/O
+                         net (fo=2, routed)           0.955     5.942    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/norm_dist__0[2]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I3_O)        0.348     6.290 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_3/O
+                         net (fo=1, routed)           0.000     6.290    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/S[1]
+    SLICE_X23Y26         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550     6.840 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry/CO[3]
+                         net (fo=1, routed)           0.000     6.840    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry_n_4
+    SLICE_X23Y27         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223     7.063 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry__0/O[0]
+                         net (fo=1, routed)           0.000     7.063    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/minusOp[4]
+    SLICE_X23Y27         FDRE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.930ns  (logic 2.686ns (38.761%)  route 4.244ns (61.239%))
+  Logic Levels:           7  (CARRY4=3 DSP48E1=1 LUT3=1 LUT5=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y10          DSP48E1                      0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+    DSP48_X0Y10          DSP48E1 (Prop_dsp48e1_CLK_PATTERNDETECT)
+                                                      0.662     0.662 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT
+                         net (fo=53, routed)          2.273     2.935    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP_0
+    SLICE_X22Y29         LUT5 (Prop_lut5_I3_O)        0.124     3.059 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DET_GEN[2].CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     3.059    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/S18_out
+    SLICE_X22Y29         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     3.457 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[0].CARRY_MUX_CARRY4/CO[3]
+                         net (fo=12, routed)          0.000     3.457    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_0
+    SLICE_X22Y30         CARRY4 (Prop_carry4_CI_CO[1])
+                                                      0.157     3.614 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DET_GEN[4].CARRY_MUX_CARRY4/CO[1]
+                         net (fo=8, routed)           1.016     4.630    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/DSP_1
+    SLICE_X24Y27         LUT3 (Prop_lut3_I0_O)        0.357     4.987 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_6/O
+                         net (fo=2, routed)           0.955     5.942    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/norm_dist__0[2]
+    SLICE_X23Y26         LUT6 (Prop_lut6_I3_O)        0.348     6.290 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/minusOp_carry_i_3/O
+                         net (fo=1, routed)           0.000     6.290    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/S[1]
+    SLICE_X23Y26         CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.640     6.930 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/minusOp_carry/O[3]
+                         net (fo=1, routed)           0.000     6.930    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/minusOp[3]
+    SLICE_X23Y26         FDRE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_cbkb_U8/mult_accel_core_call_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[0]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.877ns  (logic 1.182ns (17.189%)  route 5.695ns (82.811%))
+  Logic Levels:           5  (FDCE=1 LUT2=2 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y17         FDCE                         0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+    SLICE_X25Y17         FDCE (Prop_fdce_C_Q)         0.456     0.456 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/Q
+                         net (fo=2, routed)           0.815     1.271    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_3_0
+    SLICE_X23Y17         LUT4 (Prop_lut4_I2_O)        0.124     1.395 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_7/O
+                         net (fo=1, routed)           1.279     2.674    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_CS_fsm_reg[0]_2
+    SLICE_X13Y17         LUT6 (Prop_lut6_I5_O)        0.124     2.798 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3/O
+                         net (fo=6, routed)           1.175     3.973    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3_n_4
+    SLICE_X14Y21         LUT2 (Prop_lut2_I1_O)        0.152     4.125 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_1/O
+                         net (fo=56, routed)          1.479     5.603    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/p_12_out
+    SLICE_X25Y18         LUT2 (Prop_lut2_I1_O)        0.326     5.929 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/index[3]_i_1__12/O
+                         net (fo=28, routed)          0.947     6.877    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[0]_0[0]
+    SLICE_X22Y16         FDPE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[1]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.877ns  (logic 1.182ns (17.189%)  route 5.695ns (82.811%))
+  Logic Levels:           5  (FDCE=1 LUT2=2 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y17         FDCE                         0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+    SLICE_X25Y17         FDCE (Prop_fdce_C_Q)         0.456     0.456 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/Q
+                         net (fo=2, routed)           0.815     1.271    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_3_0
+    SLICE_X23Y17         LUT4 (Prop_lut4_I2_O)        0.124     1.395 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_7/O
+                         net (fo=1, routed)           1.279     2.674    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_CS_fsm_reg[0]_2
+    SLICE_X13Y17         LUT6 (Prop_lut6_I5_O)        0.124     2.798 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3/O
+                         net (fo=6, routed)           1.175     3.973    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3_n_4
+    SLICE_X14Y21         LUT2 (Prop_lut2_I1_O)        0.152     4.125 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_1/O
+                         net (fo=56, routed)          1.479     5.603    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/p_12_out
+    SLICE_X25Y18         LUT2 (Prop_lut2_I1_O)        0.326     5.929 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/index[3]_i_1__12/O
+                         net (fo=28, routed)          0.947     6.877    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[0]_0[0]
+    SLICE_X22Y16         FDPE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[2]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.877ns  (logic 1.182ns (17.189%)  route 5.695ns (82.811%))
+  Logic Levels:           5  (FDCE=1 LUT2=2 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y17         FDCE                         0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+    SLICE_X25Y17         FDCE (Prop_fdce_C_Q)         0.456     0.456 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/Q
+                         net (fo=2, routed)           0.815     1.271    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_3_0
+    SLICE_X23Y17         LUT4 (Prop_lut4_I2_O)        0.124     1.395 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_7/O
+                         net (fo=1, routed)           1.279     2.674    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_CS_fsm_reg[0]_2
+    SLICE_X13Y17         LUT6 (Prop_lut6_I5_O)        0.124     2.798 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3/O
+                         net (fo=6, routed)           1.175     3.973    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3_n_4
+    SLICE_X14Y21         LUT2 (Prop_lut2_I1_O)        0.152     4.125 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_1/O
+                         net (fo=56, routed)          1.479     5.603    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/p_12_out
+    SLICE_X25Y18         LUT2 (Prop_lut2_I1_O)        0.326     5.929 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/index[3]_i_1__12/O
+                         net (fo=28, routed)          0.947     6.877    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[0]_0[0]
+    SLICE_X22Y16         FDPE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[2]/CE
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[3]/CE
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.877ns  (logic 1.182ns (17.189%)  route 5.695ns (82.811%))
+  Logic Levels:           5  (FDCE=1 LUT2=2 LUT4=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y17         FDCE                         0.000     0.000 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/C
+    SLICE_X25Y17         FDCE (Prop_fdce_C_Q)         0.456     0.456 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_dest_V_fifo/full_reg/Q
+                         net (fo=2, routed)           0.815     1.271    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_3_0
+    SLICE_X23Y17         LUT4 (Prop_lut4_I2_O)        0.124     1.395 f  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/gen_sr[15].mem_reg[15][0]_srl16_i_7/O
+                         net (fo=1, routed)           1.279     2.674    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_CS_fsm_reg[0]_2
+    SLICE_X13Y17         LUT6 (Prop_lut6_I5_O)        0.124     2.798 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3/O
+                         net (fo=6, routed)           1.175     3.973    bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_3_n_4
+    SLICE_X14Y21         LUT2 (Prop_lut2_I1_O)        0.152     4.125 r  bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/gen_sr[15].mem_reg[15][0]_srl16_i_1/O
+                         net (fo=56, routed)          1.479     5.603    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/p_12_out
+    SLICE_X25Y18         LUT2 (Prop_lut2_I1_O)        0.326     5.929 r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/index[3]_i_1__12/O
+                         net (fo=28, routed)          0.947     6.877    bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[0]_0[0]
+    SLICE_X22Y16         FDPE                                         r  bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/out_stream_user_V_fifo/index_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+
+
+

@@ -1,0 +1,32 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="17" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="66" name="ret" contextFuncName="pop_stream&lt;float, 4, 5, 5&gt;" moduleName="pop_stream" rtlName="ret_fu_80_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="7" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="43" name="exitcond" contextFuncName="vector_multiply_hw&lt;float, 784&gt;" moduleName="vector_multiply_hw" rtlName="exitcond_fu_76_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="9" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="43" name="i_1" contextFuncName="vector_multiply_hw&lt;float, 784&gt;" moduleName="vector_multiply_hw" rtlName="i_1_fu_82_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="14" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="12" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="44" name="tmp" contextFuncName="vector_multiply_hw&lt;float, 784&gt;" moduleName="vector_multiply_hw" rtlName="tmp_fu_88_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="17" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="44" name="tmp_1" contextFuncName="vector_multiply_hw&lt;float, 784&gt;" moduleName="vector_multiply_hw" rtlName="mult_accel_core_ccud_U9" latency="3" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="18" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="44" name="sum" contextFuncName="vector_multiply_hw&lt;float, 784&gt;" moduleName="vector_multiply_hw" rtlName="mult_accel_core_cbkb_U8" latency="4" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="3" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="92" name="e_data_V" contextFuncName="push_stream&lt;float, 4, 5, 5&gt;" moduleName="push_stream" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="31" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="113" name="a" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="a_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="32" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="114" name="b" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="b_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="36" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="120" name="exitcond1" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="exitcond1_fu_226_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="38" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="120" name="i_2" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="i_2_fu_232_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="14" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="41" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="121" name="tmp" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="tmp_fu_238_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="42" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="121" name="tmp_s" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="grp_pop_stream_fu_199" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="50" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="124" name="exitcond" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="exitcond_fu_243_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="52" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="124" name="i_3" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="i_3_fu_249_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="14" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="55" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="127" name="tmp_1" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="grp_pop_stream_fu_199" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="56" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="127" name="tmp_8" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="tmp_8_fu_255_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="61" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="131" name="out" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="grp_vector_multiply_hw_fu_193" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+<item  id="62" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="134" name="call_ret" contextFuncName="mult_accel_core&lt;float, 784, 4, 5, 5&gt;" moduleName="mult_accel_core" rtlName="call_ret_push_stream_fu_219" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"&gt;&lt;\/item&gt;
+&lt;\/annotationInfo&gt;
+<annotationInfo>
+<item  id="35" filename="vector_mult_c_HLS/accelerator_core.cpp" linenumber="151" name="" contextFuncName="mult_accel_core_call" moduleName="mult_accel_core_call" rtlName="grp_mult_accel_core_fu_58" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\AlaiC\Desktop"><\/item>
+<\/annotationInfo>
+</annotationInfo>

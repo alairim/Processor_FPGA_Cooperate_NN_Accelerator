@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <packageLog>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;aclk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xD;&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="Acceleration_core" solutionName="solution1" date="2022-12-11T17:11:31.348+0100" type="Warning"/>
+        <logs message="WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis." projectName="Acceleration_core" solutionName="solution1" date="2022-12-11T17:11:29.836+0100" type="Warning"/>
+        <logs message="WARNING: [Power 33-232] No user defined clocks were found in the design!&#xD;&#xA;Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate" projectName="Acceleration_core" solutionName="solution1" date="2022-12-11T17:11:29.834+0100" type="Warning"/>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;aclk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xD;&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="Acceleration_core" solutionName="solution1" date="2022-12-11T17:11:29.832+0100" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;S_AXI_CONTROL_BUS_wdata[7]&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;S_AXI_CONTROL_BUS_wdata[7]&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.&#xD;&#xA;Phase 1 Build RT Design | Checksum: 1d5d7c477&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1303.191 ; gain = 0.000&#xD;&#xA;Post Restoration Checksum: NetGraph: ec579ded NumContArr: e980268a Constraints: 0 Timing: 0&#xD;&#xA;&#xD;&#xA;Phase 2 Router Initialization" projectName="Acceleration_core" solutionName="solution1" date="2022-12-11T17:11:24.794+0100" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;S_AXI_CONTROL_BUS_rready&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;S_AXI_CONTROL_BUS_rready&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported." projectName="Acceleration_core" solutionName="solution1" date="2022-12-11T17:11:14.848+0100" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,1092 @@
+INFO-FLOW: Workspace C:/Users/AlaiC/Desktop/Acceleration_core/solution1 opened at Sun Dec 11 17:08:34 +0100 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z007sclg225-1 
+Execute       add_library xilinx/zynq/zynq:xc7z007s:clg225:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z007s 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 3600}   {LUT 14400}     {FF 28800}  {DSP48E 66}    {BRAM 100}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z007sclg225-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 3600}   {LUT 14400}     {FF 28800}  {DSP48E 66}    {BRAM 100}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.157 sec.
+Execute   set_part xc7z007sclg225-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z007s:clg225:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z007s 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 3600}   {LUT 14400}     {FF 28800}  {DSP48E 66}    {BRAM 100}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'vector_mult_c_HLS/accelerator_core.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling vector_mult_c_HLS/accelerator_core.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted vector_mult_c_HLS/accelerator_core.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "vector_mult_c_HLS/accelerator_core.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E vector_mult_c_HLS/accelerator_core.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp
+Command       clang done; 0.518 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.263 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp"  -o "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/useless.bc
+Command       clang done; 0.672 sec.
+INFO-FLOW: Done: GCC PP time: 1.5 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp std=gnu++98 -directive=C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.236 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp std=gnu++98 -directive=C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.226 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/xilinx-dataflow-lawyer.accelerator_core.pp.0.cpp.diag.yml C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/xilinx-dataflow-lawyer.accelerator_core.pp.0.cpp.out.log 2> C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/xilinx-dataflow-lawyer.accelerator_core.pp.0.cpp.err.log 
+Command       ap_eval done; 0.262 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/tidy-3.1.accelerator_core.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/tidy-3.1.accelerator_core.pp.0.cpp.out.log 2> C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/tidy-3.1.accelerator_core.pp.0.cpp.err.log 
+Command         ap_eval done; 0.64 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/xilinx-legacy-rewriter.accelerator_core.pp.0.cpp.out.log 2> C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/xilinx-legacy-rewriter.accelerator_core.pp.0.cpp.err.log 
+Command         ap_eval done; 0.337 sec.
+Command       tidy_31 done; 0.993 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.5 seconds per iteration
+INFO-FLOW: Pragma Handling...
+WARNING: [HLS 200-41] Resource core 'AXIS' on port '&in_stream' is deprecated. Please use the interface directive to specify the AXI interface.
+WARNING: [HLS 200-41] Resource core 'AXIS' on port '&out_stream' is deprecated. Please use the interface directive to specify the AXI interface.
+WARNING: [HLS 200-41] Resource core 'AXI4LiteS' on port '0' is deprecated. Please use the interface directive to specify the AXI interface.
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.637 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.bc
+Command       clang done; 0.74 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/accelerator_core.g.bc -hls-opt -except-internalize mult_accel_core_call -LD:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.561 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.387 ; gain = 17.855
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.387 ; gain = 17.855
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.pp.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.292 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top mult_accel_core_call -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.0.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 107.512 ; gain = 21.980
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.1.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.146 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 110.543 ; gain = 25.012
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.g.1.bc to C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.1.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-105] Cannot partition array 'a' (vector_mult_c_HLS/accelerator_core.cpp:113): indivisible factor 78 on dimension 1, which has 784 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'b' (vector_mult_c_HLS/accelerator_core.cpp:114): indivisible factor 78 on dimension 1, which has 784 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'a' (vector_mult_c_HLS/accelerator_core.cpp:113): indivisible factor 78 on dimension 1, which has 784 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'b' (vector_mult_c_HLS/accelerator_core.cpp:114): indivisible factor 78 on dimension 1, which has 784 elements.
+WARNING: [XFORM 203-124] Array  'in_stream.data.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'in_stream.keep.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'in_stream.strb.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'in_stream.user.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'in_stream.last.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'in_stream.id.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'in_stream.dest.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+Command         transform done; 0.204 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.124 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 134.281 ; gain = 48.750
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.2.bc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'vector_multiply_hw<float, 784>' to 'vector_multiply_hw' (vector_mult_c_HLS/accelerator_core.cpp:43:28)
+WARNING: [XFORM 203-631] Renaming function 'push_stream<float, 4, 5, 5>' to 'push_stream' (vector_mult_c_HLS/accelerator_core.cpp:92:2)
+WARNING: [XFORM 203-631] Renaming function 'pop_stream<float, 4, 5, 5>' to 'pop_stream' (vector_mult_c_HLS/accelerator_core.cpp:65:2)
+WARNING: [XFORM 203-631] Renaming function 'mult_accel_core<float, 784, 4, 5, 5>' to 'mult_accel_core' (vector_mult_c_HLS/accelerator_core.cpp:113:26)
+Command         transform done; 0.319 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 164.746 ; gain = 79.215
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.174 sec.
+Command     elaborate done; 6.389 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'mult_accel_core_call' ...
+Execute       ap_set_top_model mult_accel_core_call 
+Execute       get_model_list mult_accel_core_call -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model mult_accel_core_call 
+Execute       preproc_iomode -model mult_accel_core 
+Execute       preproc_iomode -model push_stream 
+Execute       preproc_iomode -model vector_multiply_hw 
+Execute       preproc_iomode -model pop_stream 
+Execute       get_model_list mult_accel_core_call -filter all-wo-channel 
+INFO-FLOW: Model list for configure: pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call
+INFO-FLOW: Configuring Module : pop_stream ...
+Execute       set_default_model pop_stream 
+Execute       apply_spec_resource_limit pop_stream 
+INFO-FLOW: Configuring Module : vector_multiply_hw ...
+Execute       set_default_model vector_multiply_hw 
+Execute       apply_spec_resource_limit vector_multiply_hw 
+INFO-FLOW: Configuring Module : push_stream ...
+Execute       set_default_model push_stream 
+Execute       apply_spec_resource_limit push_stream 
+INFO-FLOW: Configuring Module : mult_accel_core ...
+Execute       set_default_model mult_accel_core 
+Execute       apply_spec_resource_limit mult_accel_core 
+INFO-FLOW: Configuring Module : mult_accel_core_call ...
+Execute       set_default_model mult_accel_core_call 
+Execute       apply_spec_resource_limit mult_accel_core_call 
+INFO-FLOW: Model list for preprocess: pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call
+INFO-FLOW: Preprocessing Module: pop_stream ...
+Execute       set_default_model pop_stream 
+Execute       cdfg_preprocess -model pop_stream 
+Execute       rtl_gen_preprocess pop_stream 
+INFO-FLOW: Preprocessing Module: vector_multiply_hw ...
+Execute       set_default_model vector_multiply_hw 
+Execute       cdfg_preprocess -model vector_multiply_hw 
+Execute       rtl_gen_preprocess vector_multiply_hw 
+INFO-FLOW: Preprocessing Module: push_stream ...
+Execute       set_default_model push_stream 
+Execute       cdfg_preprocess -model push_stream 
+Execute       rtl_gen_preprocess push_stream 
+INFO-FLOW: Preprocessing Module: mult_accel_core ...
+Execute       set_default_model mult_accel_core 
+Execute       cdfg_preprocess -model mult_accel_core 
+Execute       rtl_gen_preprocess mult_accel_core 
+INFO-FLOW: Preprocessing Module: mult_accel_core_call ...
+Execute       set_default_model mult_accel_core_call 
+Execute       cdfg_preprocess -model mult_accel_core_call 
+Execute       rtl_gen_preprocess mult_accel_core_call 
+INFO-FLOW: Model list for synthesis: pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pop_stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model pop_stream 
+Execute       schedule -model pop_stream 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.995 seconds; current allocated memory: 123.496 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.sched.adb -f 
+INFO-FLOW: Finish scheduling pop_stream.
+Execute       set_default_model pop_stream 
+Execute       bind -model pop_stream 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=pop_stream
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.015 seconds; current allocated memory: 123.588 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.bind.adb -f 
+INFO-FLOW: Finish binding pop_stream.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vector_multiply_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model vector_multiply_hw 
+Execute       schedule -model vector_multiply_hw 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.027 seconds; current allocated memory: 123.886 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.sched.adb -f 
+INFO-FLOW: Finish scheduling vector_multiply_hw.
+Execute       set_default_model vector_multiply_hw 
+Execute       bind -model vector_multiply_hw 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=vector_multiply_hw
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.029 seconds; current allocated memory: 124.089 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.bind.adb -f 
+INFO-FLOW: Finish binding vector_multiply_hw.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'push_stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model push_stream 
+Execute       schedule -model push_stream 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.033 seconds; current allocated memory: 124.130 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.sched.adb -f 
+INFO-FLOW: Finish scheduling push_stream.
+Execute       set_default_model push_stream 
+Execute       bind -model push_stream 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=push_stream
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.016 seconds; current allocated memory: 124.159 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.bind.adb -f 
+INFO-FLOW: Finish binding push_stream.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model mult_accel_core 
+Execute       schedule -model mult_accel_core 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.031 seconds; current allocated memory: 124.269 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.sched.adb -f 
+INFO-FLOW: Finish scheduling mult_accel_core.
+Execute       set_default_model mult_accel_core 
+Execute       bind -model mult_accel_core 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=mult_accel_core
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.036 seconds; current allocated memory: 124.479 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.bind.adb -f 
+INFO-FLOW: Finish binding mult_accel_core.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mult_accel_core_call' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model mult_accel_core_call 
+Execute       schedule -model mult_accel_core_call 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.046 seconds; current allocated memory: 124.514 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.sched.adb -f 
+INFO-FLOW: Finish scheduling mult_accel_core_call.
+Execute       set_default_model mult_accel_core_call 
+Execute       bind -model mult_accel_core_call 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=mult_accel_core_call
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.025 seconds; current allocated memory: 124.619 MB.
+Execute       report -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.bind.adb -f 
+INFO-FLOW: Finish binding mult_accel_core_call.
+Execute       get_model_list mult_accel_core_call -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess pop_stream 
+Execute       rtl_gen_preprocess vector_multiply_hw 
+Execute       rtl_gen_preprocess push_stream 
+Execute       rtl_gen_preprocess mult_accel_core 
+Execute       rtl_gen_preprocess mult_accel_core_call 
+INFO-FLOW: Model list for RTL generation: pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pop_stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model pop_stream -vendor xilinx -mg_file C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pop_stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.042 seconds; current allocated memory: 124.762 MB.
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       gen_rtl pop_stream -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/systemc/pop_stream -synmodules pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call 
+Execute       gen_rtl pop_stream -style xilinx -f -lang vhdl -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/vhdl/pop_stream 
+Execute       gen_rtl pop_stream -style xilinx -f -lang vlog -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/verilog/pop_stream 
+Execute       gen_tb_info pop_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream -p C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db 
+Execute       report -model pop_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/pop_stream_csynth.rpt -f 
+Execute       report -model pop_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/pop_stream_csynth.xml -f -x 
+Execute       report -model pop_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.verbose.rpt -verbose -f 
+Execute       db_write -model pop_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vector_multiply_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model vector_multiply_hw -vendor xilinx -mg_file C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'mult_accel_core_call_fadd_32ns_32ns_32_5_full_dsp_1' to 'mult_accel_core_cbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'mult_accel_core_call_fmul_32ns_32ns_32_4_max_dsp_1' to 'mult_accel_core_ccud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'mult_accel_core_cbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mult_accel_core_ccud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vector_multiply_hw'.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 125.123 MB.
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       gen_rtl vector_multiply_hw -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/systemc/vector_multiply_hw -synmodules pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call 
+Execute       gen_rtl vector_multiply_hw -style xilinx -f -lang vhdl -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/vhdl/vector_multiply_hw 
+Execute       gen_rtl vector_multiply_hw -style xilinx -f -lang vlog -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/verilog/vector_multiply_hw 
+Execute       gen_tb_info vector_multiply_hw -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw -p C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db 
+Execute       report -model vector_multiply_hw -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/vector_multiply_hw_csynth.rpt -f 
+Execute       report -model vector_multiply_hw -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/vector_multiply_hw_csynth.xml -f -x 
+Execute       report -model vector_multiply_hw -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.verbose.rpt -verbose -f 
+Execute       db_write -model vector_multiply_hw -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'push_stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model push_stream -vendor xilinx -mg_file C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'push_stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.112 seconds; current allocated memory: 125.220 MB.
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       gen_rtl push_stream -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/systemc/push_stream -synmodules pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call 
+Execute       gen_rtl push_stream -style xilinx -f -lang vhdl -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/vhdl/push_stream 
+Execute       gen_rtl push_stream -style xilinx -f -lang vlog -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/verilog/push_stream 
+Execute       gen_tb_info push_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream -p C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db 
+Execute       report -model push_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/push_stream_csynth.rpt -f 
+Execute       report -model push_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/push_stream_csynth.xml -f -x 
+Execute       report -model push_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.verbose.rpt -verbose -f 
+Execute       db_write -model push_stream -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model mult_accel_core -vendor xilinx -mg_file C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 0.057 seconds; current allocated memory: 125.714 MB.
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       gen_rtl mult_accel_core -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/systemc/mult_accel_core -synmodules pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call 
+Execute       gen_rtl mult_accel_core -style xilinx -f -lang vhdl -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/vhdl/mult_accel_core 
+Execute       gen_rtl mult_accel_core -style xilinx -f -lang vlog -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/verilog/mult_accel_core 
+Execute       gen_tb_info mult_accel_core -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core -p C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db 
+Execute       report -model mult_accel_core -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/mult_accel_core_csynth.rpt -f 
+Execute       report -model mult_accel_core -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/mult_accel_core_csynth.xml -f -x 
+Execute       report -model mult_accel_core -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.verbose.rpt -verbose -f 
+Execute       db_write -model mult_accel_core -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mult_accel_core_call' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model mult_accel_core_call -vendor xilinx -mg_file C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_data_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_keep_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_strb_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_user_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_last_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_id_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/in_stream_dest_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_data_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_keep_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_strb_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_user_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_last_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_id_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mult_accel_core_call/out_stream_dest_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'mult_accel_core_call' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mult_accel_core_call'.
+INFO: [HLS 200-111]  Elapsed time: 0.137 seconds; current allocated memory: 126.080 MB.
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       gen_rtl mult_accel_core_call -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/systemc/mult_accel_core_call -synmodules pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call 
+Execute       gen_rtl mult_accel_core_call -istop -style xilinx -f -lang vhdl -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/vhdl/mult_accel_core_call 
+Execute       gen_rtl mult_accel_core_call -istop -style xilinx -f -lang vlog -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/verilog/mult_accel_core_call 
+Execute       export_constraint_db -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl -f -tool general 
+Execute       report -model mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.design.xml -verbose -f -dv 
+Execute       report -model mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call -p C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db 
+Execute       report -model mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/mult_accel_core_call_csynth.rpt -f 
+Execute       report -model mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/syn/report/mult_accel_core_call_csynth.xml -f -x 
+Execute       report -model mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.verbose.rpt -verbose -f 
+Execute       db_write -model mult_accel_core_call -o C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.adb -f 
+Execute       sc_get_clocks mult_accel_core_call 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain mult_accel_core_call 
+INFO-FLOW: Model list for RTL component generation: pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call
+INFO-FLOW: Handling components in module [pop_stream] ... 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+INFO-FLOW: Handling components in module [vector_multiply_hw] ... 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+INFO-FLOW: Found component mult_accel_core_cbkb.
+INFO-FLOW: Append model mult_accel_core_cbkb
+INFO-FLOW: Found component mult_accel_core_ccud.
+INFO-FLOW: Append model mult_accel_core_ccud
+INFO-FLOW: Handling components in module [push_stream] ... 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+INFO-FLOW: Handling components in module [mult_accel_core] ... 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+INFO-FLOW: Found component mult_accel_core_a.
+INFO-FLOW: Append model mult_accel_core_a
+INFO-FLOW: Handling components in module [mult_accel_core_call] ... 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO-FLOW: Append model pop_stream
+INFO-FLOW: Append model vector_multiply_hw
+INFO-FLOW: Append model push_stream
+INFO-FLOW: Append model mult_accel_core
+INFO-FLOW: Append model mult_accel_core_call
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: mult_accel_core_cbkb mult_accel_core_ccud mult_accel_core_a pop_stream vector_multiply_hw push_stream mult_accel_core mult_accel_core_call
+INFO-FLOW: To file: write model mult_accel_core_cbkb
+INFO-FLOW: To file: write model mult_accel_core_ccud
+INFO-FLOW: To file: write model mult_accel_core_a
+INFO-FLOW: To file: write model pop_stream
+INFO-FLOW: To file: write model vector_multiply_hw
+INFO-FLOW: To file: write model push_stream
+INFO-FLOW: To file: write model mult_accel_core
+INFO-FLOW: To file: write model mult_accel_core_call
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/AlaiC/Desktop/Acceleration_core/solution1
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'mult_accel_core_a_ram (RAM)' using block RAMs.
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/AlaiC/Desktop/Acceleration_core/solution1
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=mult_accel_core_call xml_exists=0
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO: [IMPL 213-200] Port 'in_stream_data_V' is mapped to 'TDATA' by default.
+INFO: [IMPL 213-200] Port 'in_stream_keep_V' is mapped to 'TKEEP' by default.
+INFO: [IMPL 213-200] Port 'in_stream_strb_V' is mapped to 'TSTRB' by default.
+INFO: [IMPL 213-200] Port 'in_stream_user_V' is mapped to 'TUSER' by default.
+INFO: [IMPL 213-200] Port 'in_stream_last_V' is mapped to 'TLAST' by default.
+INFO: [IMPL 213-200] Port 'in_stream_id_V' is mapped to 'TID' by default.
+INFO: [IMPL 213-200] Port 'in_stream_dest_V' is mapped to 'TDEST' by default.
+INFO: [IMPL 213-200] Port 'out_stream_data_V' is mapped to 'TDATA' by default.
+INFO: [IMPL 213-200] Port 'out_stream_keep_V' is mapped to 'TKEEP' by default.
+INFO: [IMPL 213-200] Port 'out_stream_strb_V' is mapped to 'TSTRB' by default.
+INFO: [IMPL 213-200] Port 'out_stream_user_V' is mapped to 'TUSER' by default.
+INFO: [IMPL 213-200] Port 'out_stream_last_V' is mapped to 'TLAST' by default.
+INFO: [IMPL 213-200] Port 'out_stream_id_V' is mapped to 'TID' by default.
+INFO: [IMPL 213-200] Port 'out_stream_dest_V' is mapped to 'TDEST' by default.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/impl/.pcores/verilog/CONTROL_BUS.slave.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       PcoreAdapters type=axi4stream INPUT_STREAM
+INFO-FLOW: DBG:CMD:       PcoreAdapters type=axi4stream OUTPUT_STREAM
+INFO-FLOW: DBG:CMD:       PcoreAdapters type=axi4lite S_AXI_CONTROL_BUS
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=true #gSsdmPorts=30
+INFO-FLOW: DBG:CMD:       copy-pcore-adaptors
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=14
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=true generate_bd_files=1 #modelList=8 #gSsdmPorts=30
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+Execute       sc_get_clocks mult_accel_core_call 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/impl/misc/mult_accel_core_call_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/impl/misc/mult_accel_core_call_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/kernel.internal.xml
+Execute       source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 179.188 ; gain = 93.656
+INFO: [SYSC 207-301] Generating SystemC RTL for mult_accel_core_call.
+INFO: [VHDL 208-304] Generating VHDL RTL for mult_accel_core_call.
+INFO: [VLOG 209-307] Generating Verilog RTL for mult_accel_core_call.
+Command     autosyn done; 1.678 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 8.077 sec.
+Command ap_source done; 8.271 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/AlaiC/Desktop/Acceleration_core/solution1 opened at Sun Dec 11 17:09:04 +0100 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z007sclg225-1 
+Execute       add_library xilinx/zynq/zynq:xc7z007s:clg225:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z007s 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 3600}   {LUT 14400}     {FF 28800}  {DSP48E 66}    {BRAM 100}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z007sclg225-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 3600}   {LUT 14400}     {FF 28800}  {DSP48E 66}    {BRAM 100}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.166 sec.
+Execute   export_design -flow impl -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -flow impl -rtl verilog
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=mult_accel_core_call xml_exists=1
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO: [IMPL 213-200] Port 'in_stream_data_V' is mapped to 'TDATA' by default.
+INFO: [IMPL 213-200] Port 'in_stream_keep_V' is mapped to 'TKEEP' by default.
+INFO: [IMPL 213-200] Port 'in_stream_strb_V' is mapped to 'TSTRB' by default.
+INFO: [IMPL 213-200] Port 'in_stream_user_V' is mapped to 'TUSER' by default.
+INFO: [IMPL 213-200] Port 'in_stream_last_V' is mapped to 'TLAST' by default.
+INFO: [IMPL 213-200] Port 'in_stream_id_V' is mapped to 'TID' by default.
+INFO: [IMPL 213-200] Port 'in_stream_dest_V' is mapped to 'TDEST' by default.
+INFO: [IMPL 213-200] Port 'out_stream_data_V' is mapped to 'TDATA' by default.
+INFO: [IMPL 213-200] Port 'out_stream_keep_V' is mapped to 'TKEEP' by default.
+INFO: [IMPL 213-200] Port 'out_stream_strb_V' is mapped to 'TSTRB' by default.
+INFO: [IMPL 213-200] Port 'out_stream_user_V' is mapped to 'TUSER' by default.
+INFO: [IMPL 213-200] Port 'out_stream_last_V' is mapped to 'TLAST' by default.
+INFO: [IMPL 213-200] Port 'out_stream_id_V' is mapped to 'TID' by default.
+INFO: [IMPL 213-200] Port 'out_stream_dest_V' is mapped to 'TDEST' by default.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/impl/.pcores/verilog/CONTROL_BUS.slave.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       PcoreAdapters type=axi4stream INPUT_STREAM
+INFO-FLOW: DBG:CMD:       PcoreAdapters type=axi4stream OUTPUT_STREAM
+INFO-FLOW: DBG:CMD:       PcoreAdapters type=axi4lite S_AXI_CONTROL_BUS
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=true #gSsdmPorts=30
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=mult_accel_core_call
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+INFO-FLOW: DBG:CMD:       generate_ip_ooc_xdc
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_pcore_ip_script
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec C:/Users/AlaiC/Desktop/Acceleration_core/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:CMD:   auto_impl: eval: -tool vivado -flow impl -rtl verilog
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/verilog
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/pop_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/vector_multiply_hw.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/push_stream.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core.compgen.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.constraint.tcl 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/mult_accel_core_call.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.101 sec.
+Command     ap_source done; 0.101 sec.
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     get_config_export -vivado_report_level 
+Execute     get_config_export -vivado_ip_cache 
+Execute     get_config_export -vivado_enable_slr_assignment 
+Execute     get_config_export -vivado_bd_cell_properties 
+Execute     get_config_export -vivado_synth_design_args 
+Execute     source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_synth_strategy 
+Execute     get_config_export -vivado_synth_run_properties 
+Execute     get_config_export -vivado_impl_run_properties 
+Execute     get_config_export -vivado_enable_pblock 
+Execute     get_config_export -vivado_impl_strategy 
+Execute     get_config_export -vivado_phys_opt 
+INFO-FLOW: DBG:CMD: auto_impl: vlog exec C:/Users/AlaiC/Desktop/Acceleration_core/solution1/impl/verilog/impl.bat
+Command   export_design done; 146.716 sec.
+Command ap_source done; 146.885 sec.
+Execute cleanup_all 

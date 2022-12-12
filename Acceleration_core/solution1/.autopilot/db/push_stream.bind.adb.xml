@@ -1,0 +1,80 @@
+<stg><name>push_stream</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+:0  %v_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %v_read)
+
+]]></Node>
+<StgValue><ssdm name="v_read_1"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="32" op_0_bw="32">
+<![CDATA[
+:1  %e_data_V = bitcast float %v_read_1 to i32
+
+]]></Node>
+<StgValue><ssdm name="e_data_V"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="32">
+<![CDATA[
+:2  ret i32 %e_data_V
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="5" name="v_read" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="v_read"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="7" from="_ssdm_op_Read.ap_auto.float" to="v_read_1" fromId="6" toId="2">
+</dataflow>
+<dataflow id="8" from="v_read" to="v_read_1" fromId="5" toId="2">
+</dataflow>
+<dataflow id="9" from="v_read_1" to="e_data_V" fromId="2" toId="3">
+</dataflow>
+<dataflow id="10" from="e_data_V" to="StgValue_4" fromId="3" toId="4">
+</dataflow>
+</dataflows>
+
+
+</stg>

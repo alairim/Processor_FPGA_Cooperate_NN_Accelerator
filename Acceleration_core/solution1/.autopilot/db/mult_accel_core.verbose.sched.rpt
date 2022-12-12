@@ -1,0 +1,211 @@
+
+
+================================================================
+== Vivado HLS Report for 'mult_accel_core'
+================================================================
+* Date:           Sun Dec 11 17:08:41 2022
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Acceleration_core
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z007sclg225-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.256|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  11764|  11764|  11764|  11764|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  1568|  1568|         2|          -|          -|   784|    no    |
+        |- Loop 2  |  1568|  1568|         2|          -|          -|   784|    no    |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond1)
+	4  / (exitcond1)
+3 --> 
+	2  / true
+4 --> 
+	5  / (!exitcond)
+	6  / (exitcond)
+5 --> 
+	4  / true
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i5* %out_stream_dest_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 7 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i5* %out_stream_id_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 8 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i1* %out_stream_last_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 9 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %out_stream_user_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 10 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %out_stream_strb_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 11 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %out_stream_keep_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 12 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i32* %out_stream_data_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [26 x i8]* @p_str4)"   --->   Operation 13 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i5* %in_stream_dest_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 14 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i5* %in_stream_id_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 15 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i1* %in_stream_last_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 16 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %in_stream_user_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 17 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %in_stream_strb_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 18 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %in_stream_keep_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 19 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i32* %in_stream_data_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 20 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %out_stream_data_V, i4* %out_stream_keep_V, i4* %out_stream_strb_V, i4* %out_stream_user_V, i1* %out_stream_last_V, i5* %out_stream_id_V, i5* %out_stream_dest_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %in_stream_data_V, i4* %in_stream_keep_V, i4* %in_stream_strb_V, i4* %in_stream_user_V, i1* %in_stream_last_V, i5* %in_stream_id_V, i5* %in_stream_dest_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%a = alloca [784 x float], align 16" [vector_mult_c_HLS/accelerator_core.cpp:113]   --->   Operation 23 'alloca' 'a' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%b = alloca [784 x float], align 16" [vector_mult_c_HLS/accelerator_core.cpp:114]   --->   Operation 24 'alloca' 'b' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_1 : Operation 25 [1/1] (1.76ns)   --->   "br label %1" [vector_mult_c_HLS/accelerator_core.cpp:120]   --->   Operation 25 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.77>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%i = phi i10 [ 0, %0 ], [ %i_2, %2 ]"   --->   Operation 26 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (1.77ns)   --->   "%exitcond1 = icmp eq i10 %i, -240" [vector_mult_c_HLS/accelerator_core.cpp:120]   --->   Operation 27 'icmp' 'exitcond1' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 28 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (1.73ns)   --->   "%i_2 = add i10 %i, 1" [vector_mult_c_HLS/accelerator_core.cpp:120]   --->   Operation 29 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %exitcond1, label %.preheader.preheader, label %2" [vector_mult_c_HLS/accelerator_core.cpp:120]   --->   Operation 30 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (1.76ns)   --->   "br label %.preheader" [vector_mult_c_HLS/accelerator_core.cpp:124]   --->   Operation 31 'br' <Predicate = (exitcond1)> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 5.02>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%tmp = zext i10 %i to i64" [vector_mult_c_HLS/accelerator_core.cpp:121]   --->   Operation 32 'zext' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (1.76ns)   --->   "%tmp_s = call fastcc float @pop_stream(i32* %in_stream_data_V, i4* %in_stream_keep_V, i4* %in_stream_strb_V, i4* %in_stream_user_V, i1* %in_stream_last_V, i5* %in_stream_id_V, i5* %in_stream_dest_V)" [vector_mult_c_HLS/accelerator_core.cpp:121]   --->   Operation 33 'call' 'tmp_s' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%a_addr = getelementptr inbounds [784 x float]* %a, i64 0, i64 %tmp" [vector_mult_c_HLS/accelerator_core.cpp:121]   --->   Operation 34 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (3.25ns)   --->   "store float %tmp_s, float* %a_addr, align 4" [vector_mult_c_HLS/accelerator_core.cpp:121]   --->   Operation 35 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "br label %1" [vector_mult_c_HLS/accelerator_core.cpp:120]   --->   Operation 36 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 1.77>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%i1 = phi i10 [ %i_3, %3 ], [ 0, %.preheader.preheader ]"   --->   Operation 37 'phi' 'i1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (1.77ns)   --->   "%exitcond = icmp eq i10 %i1, -240" [vector_mult_c_HLS/accelerator_core.cpp:124]   --->   Operation 38 'icmp' 'exitcond' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 39 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [1/1] (1.73ns)   --->   "%i_3 = add i10 %i1, 1" [vector_mult_c_HLS/accelerator_core.cpp:124]   --->   Operation 40 'add' 'i_3' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %4, label %3" [vector_mult_c_HLS/accelerator_core.cpp:124]   --->   Operation 41 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 42 [2/2] (0.00ns)   --->   "%out = call fastcc float @vector_multiply_hw([784 x float]* %a, [784 x float]* %b)" [vector_mult_c_HLS/accelerator_core.cpp:131]   --->   Operation 42 'call' 'out' <Predicate = (exitcond)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 3> <Delay = 5.02>
+ST_5 : Operation 43 [1/1] (1.76ns)   --->   "%tmp_1 = call fastcc float @pop_stream(i32* %in_stream_data_V, i4* %in_stream_keep_V, i4* %in_stream_strb_V, i4* %in_stream_user_V, i1* %in_stream_last_V, i5* %in_stream_id_V, i5* %in_stream_dest_V)" [vector_mult_c_HLS/accelerator_core.cpp:127]   --->   Operation 43 'call' 'tmp_1' <Predicate = true> <Delay = 1.76> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%tmp_8 = zext i10 %i1 to i64" [vector_mult_c_HLS/accelerator_core.cpp:127]   --->   Operation 44 'zext' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%b_addr = getelementptr inbounds [784 x float]* %b, i64 0, i64 %tmp_8" [vector_mult_c_HLS/accelerator_core.cpp:127]   --->   Operation 45 'getelementptr' 'b_addr' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (3.25ns)   --->   "store float %tmp_1, float* %b_addr, align 4" [vector_mult_c_HLS/accelerator_core.cpp:127]   --->   Operation 46 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "br label %.preheader" [vector_mult_c_HLS/accelerator_core.cpp:124]   --->   Operation 47 'br' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 3> <Delay = 0.00>
+ST_6 : Operation 48 [1/2] (0.00ns)   --->   "%out = call fastcc float @vector_multiply_hw([784 x float]* %a, [784 x float]* %b)" [vector_mult_c_HLS/accelerator_core.cpp:131]   --->   Operation 48 'call' 'out' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%call_ret = call fastcc i32 @push_stream(float %out)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 49 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %out_stream_data_V, i32 %call_ret)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 50 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 51 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i4P(i4* %out_stream_keep_V, i4 -1)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 51 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i4P(i4* %out_stream_strb_V, i4 -1)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 52 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i4P(i4* %out_stream_user_V, i4 0)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 53 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 54 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i1P(i1* %out_stream_last_V, i1 true)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 54 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i5P(i5* %out_stream_id_V, i5 0)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 55 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i5P(i5* %out_stream_dest_V, i5 0)" [vector_mult_c_HLS/accelerator_core.cpp:134]   --->   Operation 56 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 57 [1/1] (0.00ns)   --->   "ret void" [vector_mult_c_HLS/accelerator_core.cpp:136]   --->   Operation 57 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', vector_mult_c_HLS/accelerator_core.cpp:120) [35]  (1.77 ns)
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', vector_mult_c_HLS/accelerator_core.cpp:120) [35]  (0 ns)
+	'icmp' operation ('exitcond1', vector_mult_c_HLS/accelerator_core.cpp:120) [36]  (1.77 ns)
+
+ <State 3>: 5.02ns
+The critical path consists of the following:
+	'call' operation ('tmp_s', vector_mult_c_HLS/accelerator_core.cpp:121) to 'pop_stream' [42]  (1.77 ns)
+	'store' operation (vector_mult_c_HLS/accelerator_core.cpp:121) of variable 'tmp_s', vector_mult_c_HLS/accelerator_core.cpp:121 on array 'a', vector_mult_c_HLS/accelerator_core.cpp:113 [44]  (3.25 ns)
+
+ <State 4>: 1.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', vector_mult_c_HLS/accelerator_core.cpp:124) [49]  (0 ns)
+	'icmp' operation ('exitcond', vector_mult_c_HLS/accelerator_core.cpp:124) [50]  (1.77 ns)
+
+ <State 5>: 5.02ns
+The critical path consists of the following:
+	'call' operation ('tmp_1', vector_mult_c_HLS/accelerator_core.cpp:127) to 'pop_stream' [55]  (1.77 ns)
+	'store' operation (vector_mult_c_HLS/accelerator_core.cpp:127) of variable 'tmp_1', vector_mult_c_HLS/accelerator_core.cpp:127 on array 'b', vector_mult_c_HLS/accelerator_core.cpp:114 [58]  (3.25 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

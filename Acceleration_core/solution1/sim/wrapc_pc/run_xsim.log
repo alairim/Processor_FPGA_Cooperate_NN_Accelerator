@@ -1,0 +1,81 @@
+DEBUGGING AXI4 STREAMING DATA TYPES!
+Test successful!
+
+C:\Users\AlaiC\Desktop\Acceleration_core\solution1\sim\verilog>set PATH= 
+
+C:\Users\AlaiC\Desktop\Acceleration_core\solution1\sim\verilog>call D:/Xilinx/Vivado/2018.3/bin/xelab xil_defaultlib.apatb_mult_accel_core_call_top glbl -prj mult_accel_core_call.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "D:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s mult_accel_core_call  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "D:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_mult_accel_core_call_top glbl -prj mult_accel_core_call.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile D:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s mult_accel_core_call 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/AESL_autofifo_out_stream_dest_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_dest_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/AESL_autofifo_out_stream_id_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_id_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/AESL_autofifo_out_stream_keep_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_keep_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/AESL_autofifo_out_stream_last_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_last_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/AESL_autofifo_out_stream_strb_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_strb_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/AESL_autofifo_out_stream_user_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_out_stream_user_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/mult_accel_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_accel_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/mult_accel_core_call.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_mult_accel_core_call_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/mult_accel_core_call.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_accel_core_call
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mult_accel_core
+Compiling module xil_defaultlib.mult_accel_core_call
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_keep_V
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_strb_V
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_user_V
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_last_V
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_id_V
+Compiling module xil_defaultlib.AESL_autofifo_out_stream_dest_V
+Compiling module xil_defaultlib.apatb_mult_accel_core_call_top
+Compiling module work.glbl
+Built simulation snapshot mult_accel_core_call
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/xsim.dir/mult_accel_core_call/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 11 07:36:39 2022...
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/mult_accel_core_call/xsim_script.tcl
+# xsim {mult_accel_core_call} -autoloadwcfg -tclbatch {mult_accel_core_call.tcl}
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source mult_accel_core_call.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "15855000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 15895 ns : File "C:/Users/AlaiC/Desktop/Acceleration_core/solution1/sim/verilog/mult_accel_core_call.autotb.v" Line 811
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Dec 11 07:36:43 2022...
+DEBUGGING AXI4 STREAMING DATA TYPES!
+Test successful!

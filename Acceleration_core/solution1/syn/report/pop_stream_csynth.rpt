@@ -1,0 +1,159 @@
+
+
+================================================================
+== Vivado HLS Report for 'pop_stream'
+================================================================
+* Date:           Sun Dec 11 17:08:41 2022
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Acceleration_core
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z007sclg225-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|DSP              |        -|      -|      -|      -|
+|Expression       |        -|      -|      0|      2|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|     72|
+|Register         |        -|      -|     33|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|     33|     74|
++-----------------+---------+-------+-------+-------+
+|Available        |      100|     66|  28800|  14400|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|   ~0  |   ~0  |
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_return       |   9|          2|   32|         64|
+    |e_data_V_blk_n  |   9|          2|    1|          2|
+    |e_dest_V_blk_n  |   9|          2|    1|          2|
+    |e_id_V_blk_n    |   9|          2|    1|          2|
+    |e_keep_V_blk_n  |   9|          2|    1|          2|
+    |e_last_V_blk_n  |   9|          2|    1|          2|
+    |e_strb_V_blk_n  |   9|          2|    1|          2|
+    |e_user_V_blk_n  |   9|          2|    1|          2|
+    +----------------+----+-----------+-----+-----------+
+    |Total           |  72|         16|   39|         78|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+----+----+-----+-----------+
+    |      Name      | FF | LUT| Bits| Const Bits|
+    +----------------+----+----+-----+-----------+
+    |ap_CS_fsm       |   1|   0|    1|          0|
+    |ap_return_preg  |  32|   0|   32|          0|
+    +----------------+----+----+-----+-----------+
+    |Total           |  33|   0|   33|          0|
+    +----------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------+-----+-----+------------+--------------+--------------+
+|ap_clk            |  in |    1| ap_ctrl_hs |  pop_stream  | return value |
+|ap_rst            |  in |    1| ap_ctrl_hs |  pop_stream  | return value |
+|ap_start          |  in |    1| ap_ctrl_hs |  pop_stream  | return value |
+|ap_done           | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|ap_idle           | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|ap_ready          | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|ap_return         | out |   32| ap_ctrl_hs |  pop_stream  | return value |
+|e_data_V_blk_n    | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_keep_V_blk_n    | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_strb_V_blk_n    | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_user_V_blk_n    | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_last_V_blk_n    | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_id_V_blk_n      | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_dest_V_blk_n    | out |    1| ap_ctrl_hs |  pop_stream  | return value |
+|e_data_V_dout     |  in |   32|   ap_fifo  |   e_data_V   |    pointer   |
+|e_data_V_empty_n  |  in |    1|   ap_fifo  |   e_data_V   |    pointer   |
+|e_data_V_read     | out |    1|   ap_fifo  |   e_data_V   |    pointer   |
+|e_keep_V_dout     |  in |    4|   ap_fifo  |   e_keep_V   |    pointer   |
+|e_keep_V_empty_n  |  in |    1|   ap_fifo  |   e_keep_V   |    pointer   |
+|e_keep_V_read     | out |    1|   ap_fifo  |   e_keep_V   |    pointer   |
+|e_strb_V_dout     |  in |    4|   ap_fifo  |   e_strb_V   |    pointer   |
+|e_strb_V_empty_n  |  in |    1|   ap_fifo  |   e_strb_V   |    pointer   |
+|e_strb_V_read     | out |    1|   ap_fifo  |   e_strb_V   |    pointer   |
+|e_user_V_dout     |  in |    4|   ap_fifo  |   e_user_V   |    pointer   |
+|e_user_V_empty_n  |  in |    1|   ap_fifo  |   e_user_V   |    pointer   |
+|e_user_V_read     | out |    1|   ap_fifo  |   e_user_V   |    pointer   |
+|e_last_V_dout     |  in |    1|   ap_fifo  |   e_last_V   |    pointer   |
+|e_last_V_empty_n  |  in |    1|   ap_fifo  |   e_last_V   |    pointer   |
+|e_last_V_read     | out |    1|   ap_fifo  |   e_last_V   |    pointer   |
+|e_id_V_dout       |  in |    5|   ap_fifo  |    e_id_V    |    pointer   |
+|e_id_V_empty_n    |  in |    1|   ap_fifo  |    e_id_V    |    pointer   |
+|e_id_V_read       | out |    1|   ap_fifo  |    e_id_V    |    pointer   |
+|e_dest_V_dout     |  in |    5|   ap_fifo  |   e_dest_V   |    pointer   |
+|e_dest_V_empty_n  |  in |    1|   ap_fifo  |   e_dest_V   |    pointer   |
+|e_dest_V_read     | out |    1|   ap_fifo  |   e_dest_V   |    pointer   |
++------------------+-----+-----+------------+--------------+--------------+
+

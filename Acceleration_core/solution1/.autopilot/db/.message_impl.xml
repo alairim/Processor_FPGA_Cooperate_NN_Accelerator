@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1776" tag="" content="Exporting RTL as a Vivado IP."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_data_V&apos; is mapped to &apos;TDATA&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_keep_V&apos; is mapped to &apos;TKEEP&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_strb_V&apos; is mapped to &apos;TSTRB&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_user_V&apos; is mapped to &apos;TUSER&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_last_V&apos; is mapped to &apos;TLAST&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_id_V&apos; is mapped to &apos;TID&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;in_stream_dest_V&apos; is mapped to &apos;TDEST&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_data_V&apos; is mapped to &apos;TDATA&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_keep_V&apos; is mapped to &apos;TKEEP&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_strb_V&apos; is mapped to &apos;TSTRB&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_user_V&apos; is mapped to &apos;TUSER&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_last_V&apos; is mapped to &apos;TLAST&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_id_V&apos; is mapped to &apos;TID&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-200]" key="IMPL_200_1804" tag="" content="Port &apos;out_stream_dest_V&apos; is mapped to &apos;TDEST&apos; by default."/>
+	<Message severity="INFO" prefix="[IMPL 213-8]" key="IMPL_8_1773" tag="" content="Starting RTL evaluation using Vivado ..."/>
+</Messages>

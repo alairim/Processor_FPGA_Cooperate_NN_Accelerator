@@ -1,0 +1,8 @@
+mult_accel_core_cbkb
+mult_accel_core_ccud
+mult_accel_core_a
+pop_stream
+vector_multiply_hw
+push_stream
+mult_accel_core
+mult_accel_core_call

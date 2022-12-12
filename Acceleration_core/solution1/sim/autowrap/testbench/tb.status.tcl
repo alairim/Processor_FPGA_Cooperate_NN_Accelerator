@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName accelerator_core.cpp_pre.cpp.tb.cpp

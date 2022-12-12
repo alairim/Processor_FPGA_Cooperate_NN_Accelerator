@@ -1,0 +1,11 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_autofifo_out_stream_dest_V.v"
+sv xil_defaultlib "AESL_autofifo_out_stream_id_V.v"
+sv xil_defaultlib "AESL_autofifo_out_stream_keep_V.v"
+sv xil_defaultlib "AESL_autofifo_out_stream_last_V.v"
+sv xil_defaultlib "AESL_autofifo_out_stream_strb_V.v"
+sv xil_defaultlib "AESL_autofifo_out_stream_user_V.v"
+sv xil_defaultlib "mult_accel_core.v"
+sv xil_defaultlib "mult_accel_core_call.autotb.v"
+sv xil_defaultlib "mult_accel_core_call.v"
+

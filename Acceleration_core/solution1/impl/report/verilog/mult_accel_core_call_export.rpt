@@ -1,0 +1,20 @@
+
+
+Implementation tool: Xilinx Vivado v.2018.3
+Project:             Acceleration_core
+Solution:            solution1
+Device target:       xc7z007sclg225-1
+Report date:         Sun Dec 11 17:11:31 +0100 2022
+
+#=== Post-Implementation Resource usage ===
+SLICE:          259
+LUT:            652
+FF:             755
+DSP:              5
+BRAM:             4
+SRL:             41
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    NA
+CP achieved post-implementation:    NA
+No Sequential Path

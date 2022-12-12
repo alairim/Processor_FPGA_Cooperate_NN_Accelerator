@@ -1,0 +1,120 @@
+
+
+================================================================
+== Vivado HLS Report for 'pop_stream'
+================================================================
+* Date:           Sun Dec 11 17:08:41 2022
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Acceleration_core
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z007sclg225-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i32* %e_data_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 2 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %e_keep_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 3 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %e_strb_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 4 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i4* %e_user_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 5 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i1* %e_last_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 6 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i5* %e_id_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 7 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecIFCore(i5* %e_dest_V, [1 x i8]* @p_str1, [5 x i8]* @p_str2, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [25 x i8]* @p_str3)"   --->   Operation 8 'specifcore' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %e_data_V, i4* %e_keep_V, i4* %e_strb_V, i4* %e_user_V, i1* %e_last_V, i5* %e_id_V, i5* %e_dest_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%e_data_V_read = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %e_data_V)" [vector_mult_c_HLS/accelerator_core.cpp:65]   --->   Operation 10 'read' 'e_data_V_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%ret = bitcast i32 %e_data_V_read to float" [vector_mult_c_HLS/accelerator_core.cpp:66]   --->   Operation 11 'bitcast' 'ret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%e_strb_V_load = call i4 @_ssdm_op_Read.ap_fifo.volatile.i4P(i4* %e_strb_V)" [vector_mult_c_HLS/accelerator_core.cpp:68]   --->   Operation 12 'read' 'e_strb_V_load' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%e_keep_V_load = call i4 @_ssdm_op_Read.ap_fifo.volatile.i4P(i4* %e_keep_V)" [vector_mult_c_HLS/accelerator_core.cpp:69]   --->   Operation 13 'read' 'e_keep_V_load' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%e_user_V_load = call i4 @_ssdm_op_Read.ap_fifo.volatile.i4P(i4* %e_user_V)" [vector_mult_c_HLS/accelerator_core.cpp:70]   --->   Operation 14 'read' 'e_user_V_load' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%e_last_V_load = call i1 @_ssdm_op_Read.ap_fifo.volatile.i1P(i1* %e_last_V)" [vector_mult_c_HLS/accelerator_core.cpp:71]   --->   Operation 15 'read' 'e_last_V_load' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%e_id_V_load = call i5 @_ssdm_op_Read.ap_fifo.volatile.i5P(i5* %e_id_V)" [vector_mult_c_HLS/accelerator_core.cpp:72]   --->   Operation 16 'read' 'e_id_V_load' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%e_dest_V_load = call i5 @_ssdm_op_Read.ap_fifo.volatile.i5P(i5* %e_dest_V)" [vector_mult_c_HLS/accelerator_core.cpp:73]   --->   Operation 17 'read' 'e_dest_V_load' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "ret float %ret" [vector_mult_c_HLS/accelerator_core.cpp:75]   --->   Operation 18 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

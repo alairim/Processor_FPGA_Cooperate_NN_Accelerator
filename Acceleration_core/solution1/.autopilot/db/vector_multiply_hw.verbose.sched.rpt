@@ -1,0 +1,236 @@
+
+
+================================================================
+== Vivado HLS Report for 'vector_multiply_hw'
+================================================================
+* Date:           Sun Dec 11 17:08:41 2022
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Acceleration_core
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z007sclg225-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.256|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  8625|  8625|  8625|  8625|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  8624|  8624|        11|          -|          -|   784|    no    |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	2  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %1" [vector_mult_c_HLS/accelerator_core.cpp:43]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%out_write_assign = phi float [ 0.000000e+00, %0 ], [ %sum, %2 ]"   --->   Operation 14 'phi' 'out_write_assign' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%i = phi i10 [ 0, %0 ], [ %i_1, %2 ]"   --->   Operation 15 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (1.77ns)   --->   "%exitcond = icmp eq i10 %i, -240" [vector_mult_c_HLS/accelerator_core.cpp:43]   --->   Operation 16 'icmp' 'exitcond' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 784, i64 784, i64 784)"   --->   Operation 17 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (1.73ns)   --->   "%i_1 = add i10 %i, 1" [vector_mult_c_HLS/accelerator_core.cpp:43]   --->   Operation 18 'add' 'i_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [vector_mult_c_HLS/accelerator_core.cpp:43]   --->   Operation 19 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%tmp = zext i10 %i to i64" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 20 'zext' 'tmp' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [784 x float]* %a, i64 0, i64 %tmp" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 21 'getelementptr' 'a_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 22 [2/2] (3.25ns)   --->   "%a_load = load float* %a_addr, align 4" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 22 'load' 'a_load' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [784 x float]* %b, i64 0, i64 %tmp" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 23 'getelementptr' 'b_addr' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 24 [2/2] (3.25ns)   --->   "%b_load = load float* %b_addr, align 4" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 24 'load' 'b_load' <Predicate = (!exitcond)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "ret float %out_write_assign" [vector_mult_c_HLS/accelerator_core.cpp:46]   --->   Operation 25 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 26 [1/2] (3.25ns)   --->   "%a_load = load float* %a_addr, align 4" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 26 'load' 'a_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+ST_3 : Operation 27 [1/2] (3.25ns)   --->   "%b_load = load float* %b_addr, align 4" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 27 'load' 'b_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 784> <RAM>
+
+State 4 <SV = 3> <Delay = 5.70>
+ST_4 : Operation 28 [4/4] (5.70ns)   --->   "%tmp_1 = fmul float %a_load, %b_load" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 28 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.70>
+ST_5 : Operation 29 [3/4] (5.70ns)   --->   "%tmp_1 = fmul float %a_load, %b_load" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 29 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.70>
+ST_6 : Operation 30 [2/4] (5.70ns)   --->   "%tmp_1 = fmul float %a_load, %b_load" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 30 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.70>
+ST_7 : Operation 31 [1/4] (5.70ns)   --->   "%tmp_1 = fmul float %a_load, %b_load" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 31 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.25>
+ST_8 : Operation 32 [5/5] (7.25ns)   --->   "%sum = fadd float %out_write_assign, %tmp_1" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 32 'fadd' 'sum' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.25>
+ST_9 : Operation 33 [4/5] (7.25ns)   --->   "%sum = fadd float %out_write_assign, %tmp_1" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 33 'fadd' 'sum' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.25>
+ST_10 : Operation 34 [3/5] (7.25ns)   --->   "%sum = fadd float %out_write_assign, %tmp_1" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 34 'fadd' 'sum' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 7.25>
+ST_11 : Operation 35 [2/5] (7.25ns)   --->   "%sum = fadd float %out_write_assign, %tmp_1" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 35 'fadd' 'sum' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 7.25>
+ST_12 : Operation 36 [1/5] (7.25ns)   --->   "%sum = fadd float %out_write_assign, %tmp_1" [vector_mult_c_HLS/accelerator_core.cpp:44]   --->   Operation 36 'fadd' 'sum' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 37 [1/1] (0.00ns)   --->   "br label %1" [vector_mult_c_HLS/accelerator_core.cpp:43]   --->   Operation 37 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('sum') with incoming values : ('sum', vector_mult_c_HLS/accelerator_core.cpp:44) [5]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', vector_mult_c_HLS/accelerator_core.cpp:43) [6]  (0 ns)
+	'getelementptr' operation ('a_addr', vector_mult_c_HLS/accelerator_core.cpp:44) [13]  (0 ns)
+	'load' operation ('a_load', vector_mult_c_HLS/accelerator_core.cpp:44) on array 'a' [14]  (3.25 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('a_load', vector_mult_c_HLS/accelerator_core.cpp:44) on array 'a' [14]  (3.25 ns)
+
+ <State 4>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', vector_mult_c_HLS/accelerator_core.cpp:44) [17]  (5.7 ns)
+
+ <State 5>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', vector_mult_c_HLS/accelerator_core.cpp:44) [17]  (5.7 ns)
+
+ <State 6>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', vector_mult_c_HLS/accelerator_core.cpp:44) [17]  (5.7 ns)
+
+ <State 7>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', vector_mult_c_HLS/accelerator_core.cpp:44) [17]  (5.7 ns)
+
+ <State 8>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', vector_mult_c_HLS/accelerator_core.cpp:44) [18]  (7.26 ns)
+
+ <State 9>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', vector_mult_c_HLS/accelerator_core.cpp:44) [18]  (7.26 ns)
+
+ <State 10>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', vector_mult_c_HLS/accelerator_core.cpp:44) [18]  (7.26 ns)
+
+ <State 11>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', vector_mult_c_HLS/accelerator_core.cpp:44) [18]  (7.26 ns)
+
+ <State 12>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('sum', vector_mult_c_HLS/accelerator_core.cpp:44) [18]  (7.26 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

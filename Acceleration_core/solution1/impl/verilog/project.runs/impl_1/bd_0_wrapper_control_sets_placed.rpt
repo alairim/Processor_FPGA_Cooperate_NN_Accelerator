@@ -1,0 +1,92 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Dec 11 17:11:11 2022
+| Host         : Yukikaze-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z007s
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    69 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      5 |            1 |
+|      8 |            1 |
+|     10 |            6 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             254 |           68 |
+| No           | No                    | Yes                    |              28 |           15 |
+| No           | Yes                   | No                     |              74 |           28 |
+| Yes          | No                    | No                     |             217 |           61 |
+| Yes          | No                    | Yes                    |              56 |           14 |
+| Yes          | Yes                   | No                     |             126 |           34 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                                              Enable Signal                                                              |                                                                                                        Set/Reset Signal                                                                                                       | Slice Load Count | Bel Load Count |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_CONTROL_BUS_if_U/aw_hs                                                                        |                                                                                                                                                                                                                               |                1 |              4 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_CONTROL_BUS_if_U/ar_hs                                                                        |                                                                                                                                                                                                                               |                2 |              5 |
+|  aclk        |                                                                                                                                         | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_ccud_U9/mult_accel_core_call_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/EXP/STATE_DELAY/i_pipe/state_op[0] |                2 |              8 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/b_U/mult_accel_core_a_ram_U/WEA[0]                                | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/ap_NS_fsm10_out                                                                                                                                         |                2 |             10 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/ap_CS_fsm_state2                                                  |                                                                                                                                                                                                                               |                2 |             10 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/ap_CS_fsm_state4                                                  |                                                                                                                                                                                                                               |                4 |             10 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/grp_vector_multiply_hw_fu_193_b_ce0 |                                                                                                                                                                                                                               |                4 |             10 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_CS_fsm_state12                   | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/i_reg_56_0                                                                                                                |                4 |             10 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_INPUT_STREAM_if_U/in_stream_dest_V_fifo/WEA[0]                                                | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/i_reg_169_0                                                                                                                                             |                3 |             10 |
+|  aclk        |                                                                                                                                         | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/mult_accel_core_ccud_U9/mult_accel_core_call_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/EXP/SIG_DELAY/i_pipe/state_op[0]   |                7 |             22 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/E[0]                                                              | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/aresetn_0                                                                                                                 |                7 |             28 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/s_ready_t_reg_0[0]                                                      | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/aresetn_0                                                                                                                 |                7 |             28 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/b_U/mult_accel_core_a_ram_U/ap_CS_fsm_reg[2]                      | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/aresetn_0                                                                                                                 |                9 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_return_preg[31]_i_1__0_n_4       | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/aresetn_0                                                                                                                 |                8 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_CS_fsm_state7                    |                                                                                                                                                                                                                               |                7 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/ap_NS_fsm[1]                        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/out_write_assign_reg_44[31]_i_1_n_4                                                                                       |                8 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_INPUT_STREAM_if_U/in_stream_last_V_fifo/state_reg[0]                                          |                                                                                                                                                                                                                               |                4 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_INPUT_STREAM_if_U/rs/load_p1                                                                  |                                                                                                                                                                                                                               |                9 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_INPUT_STREAM_if_U/rs/load_p2                                                                  |                                                                                                                                                                                                                               |                8 |             32 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/p_12_out                            |                                                                                                                                                                                                                               |                7 |             41 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/load_p1                                                                 |                                                                                                                                                                                                                               |               13 |             41 |
+|  aclk        | bd_0_i/hls_inst/inst/mult_accel_core_call_OUTPUT_STREAM_if_U/rs/E[0]                                                                    |                                                                                                                                                                                                                               |               11 |             41 |
+|  aclk        |                                                                                                                                         | bd_0_i/hls_inst/inst/mult_accel_core_call_U/grp_mult_accel_core_fu_58/grp_vector_multiply_hw_fu_193/aresetn_0                                                                                                                 |               34 |             72 |
+|  aclk        |                                                                                                                                         |                                                                                                                                                                                                                               |               68 |            254 |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
