@@ -14,8 +14,3 @@ different file location may cause error.
 - Run c/RTL cosimulation to debug testbench
 - Export RTL to generate ip
 
-
-Project test is vivado project.
-issue:
-- All interupt is disabled, now polling. can be optimized future.
-- DMA must be in simple mode to use 'XAxiDma_SimpleTransfer'(uncllik scatter in DMA)
