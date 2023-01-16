@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 13 01:23:06 2023
+# Process ID: 7212
+# Current directory: C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2312 C:\Users\Rodrigo Juez\Desktop\ASPLC_Projects\project_1\project_1.xpr
+# Log file: C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1/vivado.log
+# Journal file: C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1/project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/ASPLC_Projects/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/ip_repo/vector_acc_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/ip_repo/accelerator_2049_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:32 . Memory (MB): peak = 682.871 ; gain = 103.621
+update_compile_order -fileset sources_1
+config_ip_cache -clear_output_repo
+config_ip_cache -clear_output_repo
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 13 01:26:49 2023...

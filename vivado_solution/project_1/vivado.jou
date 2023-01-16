@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 13 01:23:06 2023
+# Process ID: 7212
+# Current directory: C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2312 C:\Users\Rodrigo Juez\Desktop\ASPLC_Projects\project_1\project_1.xpr
+# Log file: C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1/vivado.log
+# Journal file: C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Rodrigo Juez/Desktop/ASPLC_Projects/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+config_ip_cache -clear_output_repo
+config_ip_cache -clear_output_repo

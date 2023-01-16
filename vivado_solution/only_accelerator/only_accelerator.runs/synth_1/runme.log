@@ -1,0 +1,683 @@
+
+*** Running vivado
+    with args -log accelerator_2049_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source accelerator_2049_v1_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source accelerator_2049_v1_0.tcl -notrace
+Command: synth_design -top accelerator_2049_v1_0 -part xc7z007sclg225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10632 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 340.289 ; gain = 96.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'accelerator_2049_v1_0' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:4]
+	Parameter INPUT_SIZE bound to: 96 - type: integer 
+	Parameter RESULT_SIZE bound to: 1 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 96 - type: integer 
+	Parameter INPUT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter RESULT_ADDR_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter FIXED_POINT_AMOUNT bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:83]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:83]
+INFO: [Synth 8-6157] synthesizing module 'MatMul_v1_0_S00_AXI' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0_S00_AXI.v:112]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0_S00_AXI.v:112]
+INFO: [Synth 8-226] default block is never used [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0_S00_AXI.v:369]
+INFO: [Synth 8-6155] done synthesizing module 'MatMul_v1_0_S00_AXI' (1#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'result_lite' does not match port width (1) of module 'MatMul_v1_0_S00_AXI' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:113]
+INFO: [Synth 8-6157] synthesizing module 'mat_mul' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:12]
+	Parameter INPUT_SIZE bound to: 96 - type: integer 
+	Parameter RESULT_SIZE bound to: 1 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 96 - type: integer 
+	Parameter INPUT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter RESULT_ADDR_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter FIXED_POINT_AMOUNT bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:37]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:37]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:53]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:53]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:62]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:62]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:63]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:63]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:64]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:64]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:72]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:72]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:77]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:77]
+INFO: [Synth 8-6157] synthesizing module 'AGU' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:269]
+	Parameter INPUT_SIZE bound to: 96 - type: integer 
+	Parameter RESULT_SIZE bound to: 1 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 96 - type: integer 
+	Parameter INPUT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter RESULT_ADDR_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter S_IDLE bound to: 5'b00001 
+	Parameter S_LOAD_A bound to: 5'b00010 
+	Parameter S_LOAD_B bound to: 5'b00100 
+	Parameter S_CALCULATE bound to: 5'b01000 
+	Parameter S_OUTPUT bound to: 5'b10000 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:314]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:314]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:332]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:381]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:423]
+INFO: [Synth 8-6155] done synthesizing module 'AGU' (2#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:269]
+INFO: [Synth 8-6157] synthesizing module 'weight_storage' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:152]
+	Parameter INPUT_SIZE bound to: 96 - type: integer 
+	Parameter RESULT_SIZE bound to: 1 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 96 - type: integer 
+	Parameter WEIGHT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'weight_storage' (3#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:152]
+INFO: [Synth 8-6157] synthesizing module 'vector_storage' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:187]
+	Parameter RESULT_SIZE bound to: 96 - type: integer 
+	Parameter RESULT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:203]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:203]
+INFO: [Synth 8-6155] done synthesizing module 'vector_storage' (4#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:187]
+INFO: [Synth 8-6157] synthesizing module 'MAC' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:219]
+	Parameter INPUT_SIZE bound to: 96 - type: integer 
+	Parameter RESULT_SIZE bound to: 1 - type: integer 
+	Parameter WEIGHT_SIZE bound to: 96 - type: integer 
+	Parameter INPUT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter RESULT_ADDR_SIZE bound to: 2 - type: integer 
+	Parameter WEIGHT_ADDR_SIZE bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FIXED_POINT_AMOUNT bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MAC' (5#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:219]
+INFO: [Synth 8-6157] synthesizing module 'vector_storage__parameterized0' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:187]
+	Parameter RESULT_SIZE bound to: 1 - type: integer 
+	Parameter RESULT_ADDR_SIZE bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vector_storage__parameterized0' (5#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:187]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'results'. This will prevent further optimization [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:117]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'alu'. This will prevent further optimization [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:115]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'agu'. This will prevent further optimization [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:85]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inputs'. This will prevent further optimization [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:113]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'weights'. This will prevent further optimization [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'mat_mul' (6#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:12]
+WARNING: [Synth 8-350] instance 'accelerator' of module 'mat_mul' requires 15 connections, but only 14 given [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:128]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'MatMul_v1_0_S00_AXI_inst'. This will prevent further optimization [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'accelerator_2049_v1_0' (7#1) [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/new/accelerator_2049_v1_0.v:4]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_aclk
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_aresetn
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port m00_axis_aclk
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port m00_axis_aresetn
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 417.645 ; gain = 173.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 417.645 ; gain = 173.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 417.645 ; gain = 173.609
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'slv_reg3_reg[31:0]' into 'slv_reg2_reg[31:0]' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0_S00_AXI.v:260]
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "addr_INPUT_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_WEIGHTS_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "input_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rw_R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_R" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "m00_axis_tlast" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[64]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[65]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[66]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[67]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[68]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[69]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[70]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[71]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[72]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[73]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[74]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[75]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[76]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[77]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[78]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[79]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[80]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[81]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[82]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[83]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[84]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[85]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[86]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[87]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[88]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[89]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[90]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[91]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[92]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[93]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 549.348 ; gain = 305.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 201   
+	               10 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 24    
++---Multipliers : 
+	                64x64  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 294   
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 104   
+	   6 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MatMul_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module AGU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module weight_storage 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 97    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 97    
+Module vector_storage 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 97    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 288   
+	   2 Input      1 Bit        Muxes := 1     
+Module MAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
++---Multipliers : 
+	                64x64  Multipliers := 1     
+Module vector_storage__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module mat_mul 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'output_neuron_cnt_reg[1:0]' into 'output_neuron_cnt_reg[1:0]' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:377]
+INFO: [Synth 8-4471] merging register 'input_cnt_reg[9:0]' into 'input_cnt_reg[9:0]' [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:378]
+INFO: [Synth 8-5545] ROM "next_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v:256]
+DSP Report: Generating DSP pre_result2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: Generating DSP pre_result2, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP pre_result2.
+DSP Report: register A is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+DSP Report: operator pre_result2 is absorbed into DSP pre_result2.
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design MatMul_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_aclk
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_aresetn
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[3]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[2]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[1]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port s00_axis_tstrb[0]
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port m00_axis_aclk
+WARNING: [Synth 8-3331] design accelerator_2049_v1_0 has unconnected port m00_axis_aresetn
+INFO: [Synth 8-3886] merging instance 'MatMul_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'MatMul_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MatMul_v1_0_S00_AXI_inst/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'MatMul_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'MatMul_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MatMul_v1_0_S00_AXI_inst/\axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:56 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MAC         | A2*B2            | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | PCIN+A2*B2       | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A2*B2 | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | PCIN+A2*B2       | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|MAC         | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:00:59 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:03 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:01:05 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    29|
+|3     |DSP48E1 |     6|
+|4     |LUT1    |    40|
+|5     |LUT2    |   203|
+|6     |LUT3    |    52|
+|7     |LUT4    |    96|
+|8     |LUT5    |    94|
+|9     |LUT6    |  1867|
+|10    |MUXF7   |   832|
+|11    |MUXF8   |   256|
+|12    |FDRE    |  6490|
+|13    |FDSE    |     1|
+|14    |IBUF    |    82|
+|15    |OBUF    |    80|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------------+-------------------------------+------+
+|      |Instance                   |Module                         |Cells |
++------+---------------------------+-------------------------------+------+
+|1     |top                        |                               | 10129|
+|2     |  MatMul_v1_0_S00_AXI_inst |MatMul_v1_0_S00_AXI            |   148|
+|3     |  accelerator              |mat_mul                        |  9818|
+|4     |    agu                    |AGU                            |   259|
+|5     |    weights                |weight_storage                 |  4669|
+|6     |    inputs                 |vector_storage                 |  4610|
+|7     |    alu                    |MAC                            |   134|
+|8     |    results                |vector_storage__parameterized0 |   130|
++------+---------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 712.965 ; gain = 468.930
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1123 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 712.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+169 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:20 . Memory (MB): peak = 712.965 ; gain = 468.930
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 712.965 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ASPLC_Projects/only_accelerator/only_accelerator.runs/synth_1/accelerator_2049_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file accelerator_2049_v1_0_utilization_synth.rpt -pb accelerator_2049_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 12 01:07:02 2022...

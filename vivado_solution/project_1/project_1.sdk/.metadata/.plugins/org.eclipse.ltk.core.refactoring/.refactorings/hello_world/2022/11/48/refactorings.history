@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;hello_world/src/shiming_example&apos; to &apos;shiming_example.c&apos;" description="Rename resource &apos;shiming_example&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/shiming_example" name="shiming_example.c" stamp="1668947105153" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;hello_world/src/shiming_example.c&apos; to &apos;auto_generated.c&apos;" description="Rename resource &apos;shiming_example.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/shiming_example.c" name="auto_generated.c" stamp="1668947228692" updateReferences="true"/>
+</session>

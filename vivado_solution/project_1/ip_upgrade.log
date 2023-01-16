@@ -1,0 +1,667 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 21:08:46 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 22) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 20:34:35 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 21) to (Rev. 22)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 20:08:47 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 20) to (Rev. 21)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 19:10:57 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 17:39:00 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec 16 16:50:27 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 23:34:08 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_1_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 23:22:13 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_1_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 14) to (Rev. 15)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 23:12:53 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_1_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 19:40:46 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_1_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 18:27:13 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 17:54:00 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 17:15:27 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 16:47:18 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 16:08:18 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 15:22:16 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 15:04:41 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 14:31:12 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Dec 15 14:20:51 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 21:26:42 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 20:44:15 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vector_acc_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vector_acc_0_0 (xilinx.com:user:vector_acc:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 10:15:12 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 37) to (Rev. 38)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 10:14:18 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 36) to (Rev. 37)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 01:12:23 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0 (Rev. 36)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 00:27:42 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0 (Rev. 36)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 00:25:55 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 35) to (Rev. 36)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 14 00:00:42 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0 (Rev. 35)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Dec 13 23:43:29 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 34) to (Rev. 35)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Dec 13 00:35:18 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 33) to (Rev. 34)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec 12 22:59:41 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 32) to (Rev. 33)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec 12 22:53:41 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 31) to (Rev. 32)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec 12 21:55:11 2022
+| Host         : LAPTOP49 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z007sclg225-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_accelerator_2049_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_accelerator_2049_0_0 (xilinx.com:user:accelerator_2049:1.0) from (Rev. 30) to (Rev. 31)
+

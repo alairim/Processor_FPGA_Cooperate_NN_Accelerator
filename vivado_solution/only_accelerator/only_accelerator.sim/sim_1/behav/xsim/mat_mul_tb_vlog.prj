@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v" \
+
+sv xil_defaultlib  \
+"../../../../only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

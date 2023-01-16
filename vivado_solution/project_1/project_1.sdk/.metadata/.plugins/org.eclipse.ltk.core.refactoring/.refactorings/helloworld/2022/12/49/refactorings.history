@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;helloworld/src/helloworld2.c&apos; to &apos;network_data.h&apos;" description="Rename resource &apos;helloworld2.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld2.c" name="network_data.h" stamp="1670256582367" updateReferences="true"/>
+</session>

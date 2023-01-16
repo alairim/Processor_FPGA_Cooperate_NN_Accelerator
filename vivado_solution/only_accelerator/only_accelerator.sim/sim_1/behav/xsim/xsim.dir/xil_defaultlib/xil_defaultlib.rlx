@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/ASPLC_Projects/only_accelerator/only_accelerator.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sim_1/new/accelerator_tb.v,1671220997,systemVerilog,,,,accelerator_tb,,,,,,,,
+C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/MatMul_v1_0.v,1670286284,systemVerilog,,,,mat_mul_tb,,,,,,,,
+C:/ASPLC_Projects/only_accelerator/only_accelerator.srcs/sources_1/imports/hdl/mat_mul.v,1671220809,verilog,,,,AGU;MAC;mat_mul;vector_storage;weight_storage,,,,,,,,
